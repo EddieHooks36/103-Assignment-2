@@ -1,27 +1,21 @@
-let productName = "Curious Minds"; prompt ("Enter ProductName");
-let price = ""; prompt ("Enter Price");
-let quantity = ""; prompt ("Enter Quantity");
+let = userName = "Edward"; prompt("Enter userName");
 
-document.write(`
-       <p>product: ${productName}</p>
-       <p>price: ${price}</p>
-       <p>quantity: ${quantity}</p>
-`)
 
 
 let global;
 
 function sum(a,b){
     global="affected";
-    return 10+10;
 }
 console.log (sum(10,50));
 console.log(global);
 
 let displayValues = function(){
-    console.log("Displaying values ...")
-}  
-displayValues;
+    console.log("Curious Minds");
+    console.log("12.90");
+    console.log("Quantity");
+}
+displayValues();
 
 let total = 0;
 
@@ -30,14 +24,17 @@ function addCart(price){
     console.log(total);
     return total;
 }
-function calculateTaxes(){
-    subtotal = addCart(2);
-    
-    let totalTax = subtotal * 1.5; 
+
+  function calculateTaxes(){
+    quantity = addCart(1)
+   let totalTax = quantity * 12.91;
 
     document.getElementById("receipt").
     innerHTML=
-    
-        `<p>Subtotal = ${subtotal}</p>
-        <p>Total = ${totalTax}</p>`;
-}
+
+    `<p>Quantity = ${quantity}</p>
+    <p>Total = ${totalTax}</p>`;
+   
+console.log(`The total is : ${totalTax}`);
+  }
+
